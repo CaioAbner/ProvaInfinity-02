@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Poppins:wght@100;200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--bg-color01);
+}
+
+:root {
+    --bg-color01: #1c1c1c;
+    --bg-color02: #fff;
+}
+
+#Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#Container input {
+    border-radius: 4px;
+    border: 1px solid rgb(146, 146, 146);
+    padding: 0.20rem;
+}
+
+#meuForm {
+    background-color: var(--bg-color02);
+    padding: 2.5rem 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 20px rgb(75, 13, 220);
+}
+
+#formTitle {
+    margin-bottom: 10px;
+    margin-top: -30px;
+    border-bottom: 2px solid #000;
+
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 40px;
+}
+
+.dadosUsuario {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 5px;
+
+    font-family: "Poppins";
+}
+
+#dataContainer {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+}
+
+#optionUsuario {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+
+    font-family: "Poppins";
+    font-weight: 500;
+}
+
+.checkboxOption {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 5px;
+
+    font-family: "Poppins";
+    font-weight: 300;
+}
+.checkboxOption input[type=checkbox] {
+        border: 0px;
+        width: 17px;
+        height: 17px;
+}
+
+#optionLabel {
+    border-bottom: 2px solid #000;
+    width: 177px;
+    font-size: 20px;
+}
+
+#radioUsuario {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#radioTitle {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #000;
+    width: 213px;
+
+    font-size: 20px;
+    font-family: "Poppins";
+    font-weight: 500;
+}
+
+.radioOption {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+    align-items: center;
+
+    font-family: "Poppins";
+    font-weight: 300;
+}
+
+.radioOption input[type=radio] {
+    border: 0px;
+    width: 17px;
+    height: 17px;
+}
+
+#btnContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+.btn {
+    padding: 5px 20px;
+    border-radius: 5rem;
+    border: 1px solid #000;
+
+    font-family: "Montserrat";
+    font-weight: 500;
+
+    transition: 0.5s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #000;
+    color: #fff;
+} 

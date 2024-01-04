@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <div id="Container">
+        <form id="meuForm" action="#" method="post">
+
+            <h1 id="formTitle">Contratação</h1>
+            <div id="dataContainer">
+                <div class="dadosUsuario">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome..." required>
+                </div>
+
+                <div class="dadosUsuario">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha..." required>
+                </div>
+
+                <div class="dadosUsuario">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail..." required>
+                </div>
+            </div>
+
+            <div id="optionUsuario">
+
+                <label id="optionLabel">Área de atuação:</label>
+
+                <div class="checkboxOption">
+                    <label for="opcao1">Designer</label>
+                    <input type="checkbox" id="opcao2" name="opcoes[]" value="opcao2">
+                </div>
+
+                <div class="checkboxOption">
+                    <label for="opcao2">Marketing</label>
+                    <input type="checkbox" id="opcao3" name="opcoes[]" value="opcao3">
+                </div>
+
+                <div class="checkboxOption">
+                    <label for="opcao3">Financeiro</label>
+                    <input type="checkbox" id="opcao4" name="opcoes[]" value="opcao4">
+                </div>
+
+                <div class="checkboxOption">
+                    <label for="opcao4">Desenvolvedor Web</label>
+                    <input type="checkbox" id="opcao5" name="opcoes[]" value="opcao5">
+                </div>
+
+                <div class="checkboxOption">
+                    <label for="opcao5">Outro</label>
+                    <input type="checkbox" id="opcao6" name="opcoes[]" value="opcao5">
+                </div>
+
+            </div>
+
+            <div id="radioUsuario">
+                <label id="radioTitle">Modelo de Trabalho:</label>
+                <div class="radioOption">
+                    <label for="opcaoA">Home Office</label>
+                    <input type="radio" id="opcaoA" name="opcaoRadio" value="opcaoA" required>
+                </div>
+
+                <div class="radioOption">
+                    <label for="opcaoB">Presencial</label>
+                    <input type="radio" id="opcaoB" name="opcaoRadio" value="opcaoB" required>
+                </div>
+            </div>
+
+            <div id="btnContainer">
+                <button class="btn" type="submit">Enviar</button>
+                <button class="btn" type="reset">Limpar</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
